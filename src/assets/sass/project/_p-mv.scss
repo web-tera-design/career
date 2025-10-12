@@ -1,0 +1,54 @@
+@use "../global" as *;
+.p-mv {
+
+}
+
+.p-mv__inner {
+
+}
+
+.p-mv__content {
+
+}
+
+.p-mv__logo {
+
+}
+
+.p-mv-cta__button {
+    
+}
+
+
+.p-mv__title-wrapper {
+
+}
+
+.p-mv__title-subtext {
+
+}
+
+.p-mv__title-text {
+
+}
+
+.p-mv__title-char {
+    display: inline-block;
+    &:nth-child(1)  { letter-spacing: 0.05em; }
+    &:nth-child(2)  { letter-spacing: 0.10em; }
+    &:nth-child(3)  { letter-spacing: 0.16em; }
+    &:nth-child(4)  { letter-spacing: 0.12em; }
+    &:nth-child(5)  { letter-spacing: 0.09em; }
+    &:nth-child(6)  { letter-spacing: 0.04em; }
+    &:nth-child(7)  { letter-spacing: 0.18em; }
+    &:nth-child(8)  { letter-spacing: 0.13em; }
+    &:nth-child(9)  { letter-spacing: 0.07em; }
+    &:nth-child(10) { letter-spacing: 0.12em; }
+    &:nth-child(11) { letter-spacing: 0.11em; }
+    &:nth-child(12) { letter-spacing: 0.08em; }
+    &:nth-child(13) { letter-spacing: 0.13em; }
+    &:nth-child(14) { letter-spacing: 0.09em; }
+    &:nth-child(15) { letter-spacing: 0.14em; }
+    &:nth-child(16) { letter-spacing: 0.20em; }
+}
+
