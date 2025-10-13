@@ -4,51 +4,65 @@
 }
 
 .p-mv__inner {
-
+padding-inline: rm(20);
 }
 
 .p-mv__content {
-
+padding-block-start: rm(111);
 }
 
 .p-mv__logo {
-
+padding-inline-start: rm(81);
 }
 
 .p-mv-cta__button {
-    
+    padding-block-start: rm(35);
+    padding-inline-start: rm(103);
 }
 
 
 .p-mv__title-wrapper {
+padding-block-start: rm(50);
+padding-inline-start: rm(12);
+display: flex;
+flex-direction: column;
 
 }
 
 .p-mv__title-subtext {
-
+    padding-inline-start: rm(16);
+font-size: rm(18);
+font-weight: 500;
+letter-spacing: -1.8px;
 }
 
 .p-mv__title-text {
-
+    position: relative;
+    bottom: rm(30);
+transform: skew(-5deg);
+text-shadow: -3px 3px 10px rgba(240, 240, 240, 0.20);
+font-family: $font-cta;
+font-size: rm(110);
+font-weight: 900;
 }
 
 .p-mv__title-char {
     display: inline-block;
-    &:nth-child(1)  { letter-spacing: 0.05em; }
-    &:nth-child(2)  { letter-spacing: 0.10em; }
-    &:nth-child(3)  { letter-spacing: 0.16em; }
-    &:nth-child(4)  { letter-spacing: 0.12em; }
-    &:nth-child(5)  { letter-spacing: 0.09em; }
-    &:nth-child(6)  { letter-spacing: 0.04em; }
-    &:nth-child(7)  { letter-spacing: 0.18em; }
-    &:nth-child(8)  { letter-spacing: 0.13em; }
-    &:nth-child(9)  { letter-spacing: 0.07em; }
-    &:nth-child(10) { letter-spacing: 0.12em; }
-    &:nth-child(11) { letter-spacing: 0.11em; }
-    &:nth-child(12) { letter-spacing: 0.08em; }
-    &:nth-child(13) { letter-spacing: 0.13em; }
-    &:nth-child(14) { letter-spacing: 0.09em; }
-    &:nth-child(15) { letter-spacing: 0.14em; }
-    &:nth-child(16) { letter-spacing: 0.20em; }
+    &:nth-child(1)  { letter-spacing: -0.25em; }
+    &:nth-child(2)  { letter-spacing: -0.3em; }
+    &:nth-child(3)  { letter-spacing: -0.4em; }
+    &:nth-child(4)  { letter-spacing: -0.5em; }
+    &:nth-child(5)  { letter-spacing: -0.4em; }
+    &:nth-child(6)  { letter-spacing: -0.35em; }
+    &:nth-child(7)  { letter-spacing: -0.8em; }
+    &:nth-child(8)  { letter-spacing: -0.35em; }
+    &:nth-child(9)  { letter-spacing: -0.4em; }
+    &:nth-child(10) { letter-spacing: -0.4em; }
+    &:nth-child(11) { letter-spacing: -0.6em; }
+    &:nth-child(12) { letter-spacing: -0.6em; }
+    &:nth-child(13) { letter-spacing: -0.6em; }
+    &:nth-child(14) { letter-spacing: -0.5em; }
+    &:nth-child(15) { letter-spacing: -0.45em; }
+    &:nth-child(16) { letter-spacing: -0.50em; }
 }
 

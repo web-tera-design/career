@@ -131,7 +131,7 @@ margin-block-start: rm(20);
 }
 
 .p-contact__required {
-    color: $color-rd;
+    color: $color-bk;
     font-weight: 700;
     font-size: rm(15);
     line-height: 100%;
@@ -207,7 +207,7 @@ select {
     inline-size: rm(720);
     border-radius: 100vmax;
     gap: rm(50);
-    background-color: $color-rd;
+    background-color: $color-bk;
     transition: all 0.3s ease;
     &::after {
       content: '';

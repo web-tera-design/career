@@ -95,8 +95,11 @@
     right: 0;
     width: 100%;
     height: 100vh;
-    background: $color-rd;
-    overflow-y: scroll;
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.40);
+    background: linear-gradient(92deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0.14) 100%);
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(40px);    overflow-y: scroll;
     translate: 101%;
     transition: translate 0.5s ease;
   
@@ -232,7 +235,7 @@
     transition: background 0.3s ease;
     @media (any-hover: hover) {
       &:hover {
-        background: $color-rd;
+        background: bk;
       }
     }
 

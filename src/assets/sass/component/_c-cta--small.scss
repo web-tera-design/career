@@ -1,0 +1,39 @@
+@use "../global" as *;
+.c-cta--small {
+inline-size: rm(265);
+}
+
+.c-cta--small-link {
+    display: inline-block;
+border-radius: 3px;
+background: #194178;
+box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.20);
+padding: rm(16) rm(72) rm(16) rm(35);
+position: relative;
+&::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+ 
+
+}
+}
+
+.c-cta--small-text {
+color: #FFF;
+font-size: rm(15);
+font-weight: 500;
+letter-spacing: -0.75px;
+}
+
+.c-cta--small-arrow {
+    inline-size: rm(30);
+    background-color: #fff;
+svg {
+    display: block;
+    inline-size: rm(4.565);
+    block-size: rm(4.565);
+}
+}
+

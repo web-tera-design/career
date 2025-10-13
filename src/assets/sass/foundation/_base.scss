@@ -4,8 +4,7 @@ body {
     font-family: $font-main;
     color: $color-bk;
     background-color: $color-wt;
-    line-height: 150%;
-    letter-spacing: 1px;
+    line-height: normal;
   }
 
   body.is-fixed {
@@ -45,7 +44,7 @@ a:focus, a:focus-visible,
 button:focus, button:focus-visible {
   transition: transform 0.3s, color 0.3s ease;
   transform: scale(1.05);
-  color: $color-rd;
+  color: $color-bk;
 }
 
 // @media screen and (min-width: 768px) {

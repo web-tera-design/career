@@ -1,18 +1,23 @@
 @use "../global" as *;
 
 .l-section__inner {
-    inline-size: min(calc(1120px + 20px * 2), 100%);
-    padding-inline: 20px;
+    inline-size: min(calc(1366px), 100%);
+    padding-inline: 50px;
     margin-inline: auto;
 }
 
 .l-section__inner--narrow {
-    inline-size: 100%;
-    padding-inline: 20px;
-    margin-inline: auto;
+    @include mq('sp-down') {
+        inline-size: 100%;
+        padding-inline: 20px;
+        margin-inline: auto;
+    }
 }
 
-
+.l-section__bg {
+    position: relative;
+z-index: 2;
+}
 
 .l-main {
 

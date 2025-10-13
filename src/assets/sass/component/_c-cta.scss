@@ -1,0 +1,49 @@
+@use "../global" as *;
+
+.c-cta__link {
+display: inline-block;
+background-color:$color-bk;
+position: relative;
+padding-inline: rm(37) rm(54);
+padding-block: rm(26) rm(34);
+}
+
+.c-cta__label {
+    display: inline-block;
+inline-size: rm(86.53);
+aspect-ratio: 1;
+position: absolute;
+left: rm(-50);
+top: rm(-40);
+img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+}
+}
+
+.c-cta__link-wrapper {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.c-cta__link-title {
+color: #CDB400;
+font-size: rm(16);
+font-weight: 700;
+letter-spacing: -0.8px;
+}
+
+.c-cta__link-text {
+color: #FFF;
+font-size: rm(20);
+font-weight: 700;
+}
+
+.c-cta__link-arrow {
+
+}
+
+
