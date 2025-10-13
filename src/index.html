@@ -14,7 +14,7 @@
     <meta name="robots" content="noindex" />
 
     <!-- タイトル -->
-    <title>/</title>
+    <title>キャリアデザインLP</title>
 
     <!-- サイト概要 -->
     <meta name="description" content="/" />
@@ -28,7 +28,7 @@
     <!-- フォント読み込み（※できるだけ先に） -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Oooh+Baby&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
 
     <!-- CSS読み込み -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?v=1.0.21" />
@@ -52,7 +52,7 @@
               会社ロゴ
               <img src="" alt="" />
             </div>
-            <nav class="l-header__nav">
+            <nav class="l-header__nav" aria-label="ヘッダーナビゲーション">
               <ul class="l-header__list">
                 <li class="l-header__item">
                   <a href="#service" class="l-header__link">
@@ -149,7 +149,7 @@
         <div class="p-mv__inner l-section__inner l-section__inner--narrow">
           <div class="p-mv__content">
             <div class="p-mv__logo">
-              <img src="" alt="平均年収UP率00%・マネージャー昇格実績00件" />
+              <img src="assets/img/mv-logos.webp" alt="平均年収UP率00%・マネージャー昇格実績00件" width="434" height="187" />
             </div>
             <div class="p-mv-cta__button">
               <a href="#contact" class="c-cta__link">
@@ -230,7 +230,7 @@
       </div>
     </section>
 
-    <section class="p-service">
+    <section id="service" class="p-service">
       <div class="p-service__inner l-section__inner l-section__inner--narrow">
         <div class="p-service__top-bg"></div>
         <div class="p-service__lower-bg"></div>
@@ -294,7 +294,7 @@
       </div>
     </section>
 
-    <section class="p-support">
+    <section id="support" class="p-support">
       <div class="p-support__inner l-section__inner l-section__inner--narrow">
         <div class="p-support__bg-wrapper">
           <div class="p-support__top-heading">
@@ -361,7 +361,7 @@
       </div>
     </section>
 
-    <section class="p-feature">
+    <section id="feature" class="p-feature">
       <div class="p-feature__inner l-section__inner l-section__inner--narrow">
         <div class="p-feature__bg-wrapper">
           <div class="p-feature__heading">
@@ -405,21 +405,19 @@
       </div>
     </section>
 
-    <section class="p-voice">
+    <section id="voice" class="p-voice">
       <div class="p-voice__inner l-section__inner l-section__inner--narrow">
         <div class="p-voice__bg-wrapper">
           <div class="p-voice__heading">
             <div class="c-heading">
-              <span class="c-heading__label">Feature</span>
+              <span class="c-heading__label">Voice</span>
               <h2 class="c-heading__title">
                 <span class="c-heading__title-text">
-                  <span class="c-heading__title-text--strong">月間10名限定</span>
+                  数字が語る、
+                  <span class="c-heading__title-text--strong">圧倒的な成長支援実績</span>
                   ！
-                  <br />
-                  成長を約束する「ハイキャリア特化型」求人ラインナップ。
                 </span>
               </h2>
-              <p class="c-heading__lead">30代で幹部候補・年収〇〇万円以上を目指せる求人のみ紹介。成長企業とのみ提携。</p>
             </div>
           </div>
           <ul class="p-voice__content-wrapper">
@@ -469,83 +467,84 @@
     <section id="faq" class="p-faq l-section__inner l-section__inner--narrow">
       <div class="p-faq__inner">
         <div class="p-faq__bg-wrapper">
-          <div class="p-voice__heading">
+          <div class="p-faq__heading">
             <div class="c-heading">
-              <span class="c-heading__label">Feature</span>
-              <h2 class="p-voice__heading-title">よくあるご質問</h2>
+              <span class="c-heading__label">FAQ</span>
+              <h2 class="p-faq__heading-title">よくあるご質問</h2>
             </div>
           </div>
           <div class="p-faq__list">
             <details class="js-details p-faq__item">
               <summary class="js-summary">
                 <span class="p-faq__question">
-                  <span class="p-faq__question-text">本当に無料でMEOやSNSのノウハウを教えてもらえるのですか？</span>
+                  <span class="p-faq__question-text">相談は本当に無料ですか</span>
                 </span>
               </summary>
               <div class="js-content">
                 <span class="p-faq__answer"></span>
-                <span class="p-faq__answer-text">はい、もちろんです。店舗集客においてMEOやSNSが不可欠な時代だからこそ、その重要性と基本的な活用法を無料でレクチャーいたします。まずはその効果を実感してください。その後、更なる成果をお求めの場合のみご相談ください。</span>
+                <span class="p-faq__answer-text"></span>
               </div>
             </details>
             <details class="js-details p-faq__item">
               <summary class="js-summary">
                 <span class="p-faq__question">
-                  <span class="p-faq__question-text">流行する店舗になるには、具体的に何をすれば良いですか？</span>
+                  <span class="p-faq__question-text">今すぐ転職するつもりがなくても相談できますか？</span>
                 </span>
               </summary>
               <div class="js-content">
                 <span class="p-faq__answer"></span>
-                <span class="p-faq__answer-text">まずは無料相談でお店の状況を詳しくお伺いし、具体的な課題や強みを洗い出します。その上で、お客様が「また来たい」と感じるための接客、メニュー構成、空間づくり、効果的な情報発信など、多角的な視点から具体的な戦略と実行プランをご提案します。</span>
+                <span class="p-faq__answer-text"></span>
               </div>
             </details>
             <details class="js-details p-faq__item">
               <summary class="js-summary">
                 <span class="p-faq__question">
-                  <span class="p-faq__question-text">効果が出るまでにどのくらいの期間がかかりますか？</span>
+                  <span class="p-faq__question-text">地方在住でもサポート可能ですか？</span>
                 </span>
               </summary>
               <div class="js-content">
                 <span class="p-faq__answer"></span>
-                <span class="p-faq__answer-text">早い店舗では1ヶ月、平均的には3ヶ月で明確な効果を実感いただけます。MEOやSNSの効果は比較的早く現れ、リピート戦略の効果は2-3ヶ月後から顕著に現れます。6ヶ月後には売上が安定し、1年後には地域No.1を目指せます。</span>
+                <span class="p-faq__answer-text"></span>
               </div>
             </details>
             <details class="js-details p-faq__item">
               <summary class="js-summary">
                 <span class="p-faq__question">
-                  <span class="p-faq__question-text">費用はどのくらいかかりますか？</span>
+                  <span class="p-faq__question-text">相談は本当に無料ですか？</span>
                 </span>
               </summary>
               <div class="js-content">
                 <span class="p-faq__answer"></span>
-                <span class="p-faq__answer-text">まずは無料相談で現状を把握させていただきます。その後、お店の規模や課題に応じてオーダーメイドでプランをご提案。投資対効果を重視し、必ず利益が出る範囲でのご提案をお約束いたします。</span>
+                <span class="p-faq__answer-text"></span>
               </div>
             </details>
             <details class="js-details p-faq__item">
               <summary class="js-summary">
                 <span class="p-faq__question">
-                  <span class="p-faq__question-text">意識を変えるだけで本当にリピート数が10倍以上になりますか？</span>
+                  <span class="p-faq__question-text">今すぐ転職するつもりがなくても相談できますか？</span>
                 </span>
               </summary>
               <div class="js-content">
                 <span class="p-faq__answer"></span>
-                <span class="p-faq__answer-text">多くの成功事例を見てきて、オーナー様の意識と行動の変化が、リピート率に最も大きな影響を与えることを実感しています。具体的な成功事例や、実践すべき思考法をお伝えし、その効果を実感いただけるよう徹底サポートします。</span>
+                <span class="p-faq__answer-text"></span>
               </div>
             </details>
             <details class="js-details p-faq__item">
               <summary class="js-summary">
                 <span class="p-faq__question">
-                  <span class="p-faq__question-text">SNSやLINEの活用は苦手なのですが、大丈夫でしょうか？</span>
+                  <span class="p-faq__question-text">地方在住でもサポート可能ですか？</span>
                 </span>
               </summary>
               <div class="js-content">
                 <span class="p-faq__answer"></span>
-                <span class="p-faq__answer-text">ご安心ください。専門知識がなくても、誰でも簡単に実践できるSNSやLINEの活用術を、わかりやすく丁寧にお伝えします。投稿のコツから効果測定の方法まで、実践的なノウハウを提供し、継続的にフォローいたします。</span>
+                <span class="p-faq__answer-text"></span>
               </div>
             </details>
           </div>
         </div>
       </div>
     </section>
+
     <section id="contact" class="p-contact">
       <div class="p-contact__inner l-section__inner l-section__inner--narrow">
         <div class="c-heading p-faq__heading">
@@ -627,5 +626,79 @@
         </div>
       </div>
     </section>
+
+    <section id="cta" class="p-cta">
+      <div class="p-cta__bg"></div>
+      <div class="p-cta__inner l-section__inner l-section__inner--narrow">
+        <div class="p-cta__wrapper">
+          <div class="p-cta__content">
+            <h2 class="p-cta__title">
+              <span class="p-cta__title-text">
+                「
+                <span class="p-cta__title-wrapper">
+                  <span class="p-cta__title-char--strong">
+                    <span class="p-cta__title-char">最</span>
+                    <span class="p-cta__title-char">高</span>
+                    <span class="p-cta__title-char">の</span>
+                    <span class="p-cta__title-char">キ</span>
+                    <span class="p-cta__title-char">ャ</span>
+                    <span class="p-cta__title-char">リ</span>
+                    <span class="p-cta__title-char">ア</span>
+                  </span>
+                </span>
+                」は、
+                <br />
+                待っているだけでは
+                <br />
+                手に入らない。
+              </span>
+            </h2>
+            <p class="p-cta__lead">
+              相談は完全無料。途中辞退も可能。
+              <br />
+              この一歩が、あなたの35歳からの未来を決定づけます。
+            </p>
+            <div class="p-cta__button">
+              <a href="#contact" class="c-cta__link">
+                <span class="c-cta__label">
+                  <img src="assets/img/cta-label.webp" alt="月間10名限定!" width="212" height="212" />
+                </span>
+                <div class="c-cta__link-wrapper">
+                  <span class="c-cta__link-title">あなたの市場価値を診断！</span>
+                  <span class="c-cta__link-text">無料キャリア相談はこちらから</span>
+                </div>
+                <span class="c-cta__link-arrow"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="l-footer">
+      <div class="l-footer__inner l-section__inner l-section__inner--narrow">
+        <div class="l-footer__logo">
+          <img src="" alt="" />
+        </div>
+        <div class="l-footer_list-wrapper">
+          <nav class="l-footer__nav" aria-label="フッターナビゲーション">
+            <ul class="l-footer__list">
+              <li class="l-footer__item">
+                <a href="" class="l-footer__link">プライバシーポリシー</a>
+              </li>
+              <li class="l-footer__item">
+                <a href="" class="l-footer__link">利用規約</a>
+              </li>
+              <li class="l-footer__item">
+                <a href="" class="l-footer__link">特定商取引法に基づく表記</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="l-footer__small">
+            <small class="l-footer__copy">© 2025 Your Company Name. All rights reserved.</small>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
