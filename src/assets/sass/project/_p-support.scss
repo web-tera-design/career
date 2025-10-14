@@ -1,54 +1,28 @@
 @use "../global" as *;
 .p-support {
-
 }
 
 .p-support__inner {
-
-}
-
-.l-section__inner {
-
-}
-
-.l-section__inner--narrow {
-
+    background: linear-gradient(to right, #96D7E6, #1A4279);
+    padding-block: rm(185) rm(50);
 }
 
 .p-support__bg-wrapper {
-
+    padding-inline: rm(68);
+    padding-block-end: rm(97);
+    background-color: $color-wt;
 }
 
 .p-support__top-heading {
 
 }
 
-.c-heading {
-
+.p-support-heading__lead {
+    padding-block-start: rm(11);
 }
-
-.c-heading__label {
-
-}
-
-.c-heading__title {
-
-}
-
-.c-heading__title-text {
-
-}
-
-.c-heading__title-text--strong {
-
-}
-
-.c-heading__lead {
-
-}
-
 .p-support__top-content-wrapper {
-
+    padding-block-start: rm(54);
+    display: flex;
 }
 
 .p-support__top-content {
@@ -56,35 +30,17 @@
 }
 
 .p-support__lower-wrapper {
-
+padding-block-start: rm(75);
 }
 
 .p-support__lower-heading {
 
 }
 
-.c-flow-heading {
-
-}
-
-.c-flow-heading__title {
-
-}
-
-.c-flow-heading__title-subtext {
-
-}
-
-.c-flow-heading__title-subtext--strong {
-
-}
-
-.c-flow-heading__title-text {
-
-}
-
 .p-support__lower-content-wrapper {
-
+padding-block-start: rm(27);
+display: flex;
+gap: rm(40);
 }
 
 .p-support__lower-content {

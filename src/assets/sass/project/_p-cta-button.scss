@@ -1,0 +1,39 @@
+@use "../global" as *;
+.p-cta__link {
+inline-size: rm(551);
+}
+
+.p-cta-button__label--large {
+    inline-size: rm(120);
+    top: rm(-50);
+    left: rm(-50);
+}
+
+.p-cta-button__link-wrapper {
+
+}
+
+.p-cta-button__link-title {
+color: #CDB400;
+font-size: rm(23);
+font-weight: 700;
+letter-spacing: -1.15px;
+}
+
+.p-cta-button__link-text {
+color: #FFF;
+font-size: rm(30);
+font-weight: 700;
+}
+
+.p-cta-button-link-arrow {
+    right: rm(-40);
+inline-size: rm(76.21);
+block-size: rm(76.21);
+}
+
+.p-cta-button-link-arrow2 {
+    right: rm(20);
+inline-size: rm(76.21);
+block-size: rm(76.21);
+}

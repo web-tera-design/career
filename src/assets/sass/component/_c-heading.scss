@@ -1,0 +1,43 @@
+@use "../global" as *;
+
+.c-heading {
+padding-block-start: rm(55);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.c-heading__label {
+    inline-size: rm(91);
+    block-size: rm(25);
+    background-color: $color-bk;
+    color:$color-wt;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.c-heading__title {
+    padding-block-start: rm(25);
+font-size: rm(30);
+font-weight: 700;
+letter-spacing: -1.5px;
+text-align: center;
+}
+
+.c-heading__title-text--strong {
+
+}
+
+.c-heading__title-text {
+
+}
+
+.c-heading__lead {
+padding-block-start: rm(4);
+font-size: rm(15);
+font-weight: 500;
+letter-spacing: -0.75px;
+}

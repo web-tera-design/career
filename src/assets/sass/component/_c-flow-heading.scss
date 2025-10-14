@@ -1,0 +1,26 @@
+@use "../global" as *;
+
+.c-flow-heading {
+}
+
+.c-flow-heading__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-flow-heading__title-subtext {
+font-size: rm(15);
+font-weight: 700;
+}
+
+.c-flow__title-subtext--strong {
+
+}
+
+.c-flow-heading__title-text {
+font-size: rm(30);
+font-weight: 700;
+letter-spacing: -1.5px;
+}

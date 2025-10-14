@@ -12,7 +12,12 @@ padding-block-start: rm(111);
 }
 
 .p-mv__logo {
-padding-inline-start: rm(81);
+margin-inline-start: rm(81);
+inline-size: rm(422);
+img {
+    inline-size: 100%;
+    block-size: auto;
+}
 }
 
 .p-mv-cta__button {

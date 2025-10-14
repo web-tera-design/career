@@ -4,12 +4,25 @@ inline-size: rm(265);
 }
 
 .c-cta--small-link {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: rm(33);
 border-radius: 3px;
 background: #194178;
 box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.20);
-padding: rm(16) rm(72) rm(16) rm(35);
+padding: rm(10) rm(10) rm(10) rm(35);
 position: relative;
+transition: background 0.3s ease;
+@media (any-hover: hover) {
+  &:hover {
+    background: $color-gley;
+    .c-cta--small-arrow  {
+        background-color: $color-bk;
+        color: #FFF;
+    }
+  }
+}
 &::after {
   content: '';
   position: absolute;
@@ -28,12 +41,19 @@ letter-spacing: -0.75px;
 }
 
 .c-cta--small-arrow {
+    display: inline-block;
     inline-size: rm(30);
+    block-size: rm(30);
     background-color: #fff;
+    border-radius: rm(3.469);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
 svg {
     display: block;
-    inline-size: rm(4.565);
-    block-size: rm(4.565);
+    inline-size: rm(10);
+    block-size: rm(10);
 }
 }
 
