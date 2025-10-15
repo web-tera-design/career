@@ -30,6 +30,7 @@ margin-block-start: rm(40);
     @include mq('sp-down') {
       inline-size: 100%;
       padding-block: rm(0) rm(20);
+      margin-block-start: 0;
     }
 
 }
@@ -48,6 +49,7 @@ font-size: rm(30);
 font-weight: 700;
 letter-spacing: -1.5px;
     @include mq('sp-down') {
+      padding-block-start: rm(10);
       font-size: rm(21);
     }
 }
@@ -61,6 +63,7 @@ letter-spacing: -1.5px;
     margin-inline: auto;
     @include mq('sp-down') {
       padding-inline: rm(20);
+      padding-block-start: rm(20);
     }
 }
 
@@ -163,6 +166,9 @@ select.p-contact__input:focus {
 input::placeholder {
     color: #b4b4b4;
     font-size: rm(15);
+    @include mq('sp-down') {
+      font-size: rm(10);
+    }
 }
 
 
@@ -211,7 +217,7 @@ select {
     }
 
     @include mq('sp-down') {
-      margin-block-start: rm(42);
+      margin-block-start: rm(40);
       padding-block: rm(15) rm(15);
       inline-size: calc(100% - rm(40));
       gap: rm(4.9);

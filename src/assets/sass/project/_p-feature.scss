@@ -2,6 +2,9 @@
 .p-feature {
 position: relative;
 margin-block-start: rm(-1046);
+@include mq('sp-down') {
+  margin-block-start: rm(-526);
+}
 }
 
 .p-feature__image-wrapper {
@@ -11,10 +14,18 @@ position: sticky;
 z-index: -1;
 top: 0;
 margin-block-start: rm(-5);
+@include mq('sp-down') {
+  block-size: rm(526);
+}
 }
 
 .p-feature__bg-image {
-
+  block-size: rm(526);
+img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+}
 }
 
 .p-feature__inner {
@@ -22,6 +33,10 @@ position: relative;
 z-index: 2;
 block-size: rm(1026);
 padding-block: rm(55) rm(45);
+@include mq('sp-down') {
+  block-size: revert;
+  padding-block: rm(30);
+}
 }
 
 .p-feature__bg-wrapper {
@@ -32,6 +47,11 @@ border: 1px solid rgba(255, 255, 255, 0.40);
 background: linear-gradient(92deg, rgba(255, 255, 255, 0.49) 0%, rgba(255, 255, 255, 0.35) 100%);
 box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.12);
 backdrop-filter: blur(15px);
+
+@include mq('sp-down') {
+  padding-inline: rm(10);
+  padding-block-end: rm(20);
+}
 }
 
 .p-feature__heading {
@@ -41,15 +61,50 @@ backdrop-filter: blur(15px);
 .p-feature__content-wrapper {
 padding-block-start: rm(50);
 display: flex;
+@include mq('sp-down') {
+  padding-block-start: rm(20);
+ display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;}
 }
 
 .p-feature__content {
+@include mq('sp-down') {
+  inline-size: rm(130);
+}
+}
 
+/* 1番だけ上の行・中央跨ぎ */
+.p-feature__content:nth-child(1) {
+  @include mq('sp-down') {
+    grid-column: 1 / 3; /* 1列目から2列目まで（両方跨ぐ） */
+    grid-row: 1 / 2;    /* 1行目 */
+    justify-self: center;
+  }
+}
+
+/* 2・3番は左右分割して下段 */
+.p-feature__content:nth-child(2) {
+  @include mq('sp-down') {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    justify-self: center;
+  }
+}
+.p-feature__content:nth-child(3) {
+  @include mq('sp-down') {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    justify-self: center;
+  }
 }
 
 .p-feature__cta-button {
 padding-block-start: rm(84);
 text-align: center;
+@include mq('sp-down') {
+  padding-block-start: rm(30);
+}
 }
 
 

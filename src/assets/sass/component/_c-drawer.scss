@@ -3,16 +3,23 @@
 .c-drawer-icon {
     position: fixed;
     z-index: 102;
-    top: rm(18);
-    right: rm(24);
+    top: rm(30);
+    right: rm(50);
     inline-size: 24px;
     block-size: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 3px;
 
-    @include mq(tab-up) {
+
+    @include mq(pc-up) {
         display: none;
+    }
+
+    @include mq('sp-down') {
+      right: rm(20);
+      top: rm(40);
     }
 }
 
@@ -94,7 +101,7 @@
     top: 0;
     right: 0;
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     border-radius: 3px;
     border: 1px solid rgba(255, 255, 255, 0.40);
     background: linear-gradient(92deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0.14) 100%);
@@ -110,7 +117,7 @@
 
 .c-drawer__content {
     width: 100%;
-    padding: 70px 38px 20px 38px;
+    transform: translateY(50%);
 }
 
 .c-drawer__list {
@@ -129,15 +136,20 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-family: "Alfa Slab One";
-    font-size: rm(15);
-    font-weight: 400;
+    font-family: $font-heading;
     @media (any-hover: hover) {
       &:hover {
         .c-drawer__text {
-                      color: #005DA2;
+                      color: $color-gley;
+        }
+        .c-drawer__subtext {
+                      color: $color-gley;
         }
       }
+      }
+    
+    @include mq('sp-down') {
+      font-size: rm(15);
     }
 
 }
@@ -149,8 +161,23 @@
 .c-drawer__text {
   inline-size: fit-content;
   text-align: center;
-    color: $color-wt;
-    font-family: "Alfa Slab One";
+    font-size: rm(30);
+    font-weight: 400;
+        transition: all 0.3s ease;
+    @media (any-hover: hover) {
+        &:hover {
+            color: #005DA2;
+        }
+    }
+
+    @include mq('sp-down') {
+      font-size: rm(20);
+    }
+
+}
+.c-drawer__subtext {
+  inline-size: fit-content;
+  text-align: center;
     font-size: rm(15);
     font-weight: 400;
         transition: all 0.3s ease;
@@ -158,6 +185,10 @@
         &:hover {
             color: #005DA2;
         }
+    }
+
+    @include mq('sp-down') {
+      font-size: rm(10);
     }
 
 }
@@ -168,11 +199,11 @@
     margin-inline: auto;
     align-items: center;
     width: fit-content;
-    margin-top: 32px;
+    margin-top: rm(32);
     padding-inline: 10px;
     padding-block: 9px 5px;
     // color: $text-wt;
-    font-family: "Saira SemiCondensed";
+    font-family: $font-heading;
     font-size: 14px;
     font-weight: 400;
     line-height: 150%; /* 21px */

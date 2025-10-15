@@ -18,6 +18,9 @@
     position: relative;
 z-index: 2;
 top:rm(-50);
+@include mq('sp-down') {
+  top: rm(-80);
+}
 }
 
 .l-main {

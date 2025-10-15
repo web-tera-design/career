@@ -23,6 +23,13 @@ transition: background 0.3s ease;
     }
   }
 }
+
+@include mq('sp-down') {
+  padding-inline: rm(10);
+  padding-block: rm(10);
+  inline-size: 95%;
+  margin-inline: rm(10);
+}
 }
 
 .c-cta__label {
@@ -34,6 +41,9 @@ img {
     inline-size: 100%;
     block-size: 100%;
     object-fit: cover;
+}
+@include mq('sp-down') {
+
 }
 }
 
@@ -50,17 +60,24 @@ font-size: rm(16);
 font-weight: 700;
 letter-spacing: -0.8px;
 transition: color 0.3s ease;
+
+@include mq('sp-down') {
+  font-size: rm(11.2);
+}
 }
 
 .c-cta__link-text {
 color: #FFF;
 font-size: rm(20);
 font-weight: 700;
+@include mq('sp-down') {
+    font-size: rm(14);
+}
 }
 
 .c-cta__link-arrow {
     position: absolute;
-    right: rm(-20);
+    right: rm(-10);
     display: inline-block;
     inline-size: rm(51);
     block-size: rm(50);
@@ -74,6 +91,15 @@ svg {
     display: block;
     inline-size: rm(18);
     block-size: rm(18);
+}
+
+@include mq('sp-down') {
+  inline-size: rm(20);
+  block-size: rm(20);
+  svg {
+    inline-size: rm(9);
+    block-size: rm(9);
+  }
 }
 }
 

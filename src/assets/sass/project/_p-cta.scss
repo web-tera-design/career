@@ -11,10 +11,22 @@
 background: url(../img/cta-bg.webp) no-repeat center center / cover;
 block-size: rm(700);
 padding-inline-start: rm(38);
+@include mq('sp-down') {
+      background: url(../img/mv-bg-sp2.webp) no-repeat center center / cover;
+      padding-inline-start: rm(20);
+      block-size: rm(500);
+      
+}
 }
 
 .p-cta__wrapper {
 padding-block-start: rm(94);
+@include mq('sp-down') {
+    transform:translateY(rm(100));
+  padding-block:rm(30);
+background: linear-gradient(92deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 100%);
+box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.12);
+}
 }
 
 .p-cta__content {
@@ -22,6 +34,7 @@ padding-block-start: rm(94);
 }
 
 .p-cta__title {
+
 }
 
 .p-cta__title-text {
@@ -32,12 +45,18 @@ font-size: rm(53);
 font-weight: 900;
 line-height: 120%;
 letter-spacing: rm(-2.65);
+@include mq('sp-down') {
+  font-size: rm(30);
+}
 }
 
 .p-cta__title-wrapper {
     font-size: rm(70);
     font-weight: 900;
     line-height: 120%; /* 84px */
+    @include mq('sp-down') {
+      font-size: rm(30);
+    }
 }
 
 .p-cta__title-char--strong {
@@ -61,6 +80,25 @@ letter-spacing: rm(-2.65);
     &:nth-child(13) { letter-spacing: -0.3em; }
 }
 
+.p-cta__title-char--point{
+position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: #dc5a28;
+      border-radius: 100vmax;
+      content: "";
+      width: rm(8);
+      height: rm(8);
+      top: rm(-10);
+      left: rm(30);
+    } 
+          &:nth-of-type(5)::before {}   // 「5」
+  &:nth-of-type(6)::before { }   // 「歳」
+  &:nth-of-type(7)::before { }   // 「ま」
+  &:nth-of-type(8)::before {  }   // 「で」
+}
+
 .p-cta__lead {
     padding-inline-start: rm(89);
     padding-block-start: rm(26);
@@ -70,9 +108,19 @@ font-size: rm(18);
 font-weight: 500;
 line-height: 166.667%; /* 166.667% */
 letter-spacing: -0.9px;
+@include mq('sp-down') {
+  padding-inline-start: revert;
+  font-size: rm(12);
+}
 }
 
 .p-cta__button {
 padding-inline-start: rm(149);
 padding-block-start: rm(65);
+@include mq('sp-down') {
+    padding-inline-start: revert;
+  padding-block-start: rm(30);
+  margin-inline: auto;
+inline-size: 100%;
+}
 }

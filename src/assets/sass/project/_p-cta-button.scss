@@ -1,12 +1,25 @@
 @use "../global" as *;
 .p-cta__link {
 inline-size: rm(551);
+@include mq('sp-down') {
+  inline-size: 95%;
+}
+}
+
+.p-cta-button-link {
+@include mq('sp-down') {
+}
 }
 
 .p-cta-button__label--large {
     inline-size: rm(120);
     top: rm(-50);
     left: rm(-50);
+    @include mq('sp-down') {
+      inline-size: rm(60);
+      top: rm(-30);
+    left: rm(-30);
+    }
 }
 
 .p-cta-button__link-wrapper {
@@ -18,22 +31,39 @@ color: #CDB400;
 font-size: rm(23);
 font-weight: 700;
 letter-spacing: -1.15px;
+@include mq('sp-down') {
+  font-size: rm(12);
+}
 }
 
 .p-cta-button__link-text {
 color: #FFF;
 font-size: rm(30);
 font-weight: 700;
+@include mq('sp-down') {
+  font-size: rm(16);
+}
 }
 
 .p-cta-button-link-arrow {
     right: rm(-40);
 inline-size: rm(76.21);
 block-size: rm(76.21);
+@include mq('sp-down') {
+  inline-size: rm(20);
+  block-size: rm(20);
+  right: rm(-10);
+}
 }
 
 .p-cta-button-link-arrow2 {
     right: rm(20);
 inline-size: rm(76.21);
 block-size: rm(76.21);
+@include mq('sp-down') {
+  inline-size: rm(20);
+  block-size: rm(20);
+  right: rm(-10);
+}
+
 }

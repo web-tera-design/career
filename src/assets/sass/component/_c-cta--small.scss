@@ -1,6 +1,9 @@
 @use "../global" as *;
 .c-cta--small {
 inline-size: rm(265);
+@include mq('tab-down') {
+  display: none;
+}
 }
 
 .c-cta--small-link {
@@ -14,6 +17,10 @@ box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.20);
 padding: rm(10) rm(10) rm(10) rm(35);
 position: relative;
 transition: background 0.3s ease;
+@include mq('sp-down') {
+  gap: rm(10);
+  padding: rm(10)
+}
 @media (any-hover: hover) {
   &:hover {
     background: $color-gley;
@@ -38,6 +45,10 @@ color: #FFF;
 font-size: rm(15);
 font-weight: 500;
 letter-spacing: -0.75px;
+@include mq('sp-down') {
+  font-size: rm(12);
+}
+
 }
 
 .c-cta--small-arrow {
@@ -54,6 +65,15 @@ svg {
     display: block;
     inline-size: rm(10);
     block-size: rm(10);
+}
+
+@include mq('sp-down') {
+  inline-size: rm(21);
+  block-size: rm(21);
+  svg {
+    inline-size: rm(7);
+    block-size: rm(7);
+  }
 }
 }
 

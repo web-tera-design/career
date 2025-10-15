@@ -14,17 +14,6 @@ summary {
   }
 }
 
-// /* その他 見栄えを整えるためのもの */
-// .item {
-//   padding-block: 20px;
-//   border-bottom: 1px solid #000;
-// }
-
-
-// .content {
-//   padding-top: 12px;
-// }
-
 .p-faq {
 
 }
@@ -35,7 +24,9 @@ padding-inline: rm(120);
 padding-block-end: rm(106);
 
 @include mq('sp-down') {
-
+padding-inline: rm(20);
+padding-block-start: rm(20);
+padding-block-end: rm(40);
 }
 }
 
@@ -49,6 +40,9 @@ color: #FFF;
 font-size: rm(30);
 font-weight: 700;
 letter-spacing: -1.5px;
+@include mq('sp-down') {
+  font-size: rm(21);
+}
 }
 
 .p-faq__list {
@@ -57,7 +51,7 @@ display: flex;
 flex-direction: column;
 gap: rm(10);
 @include mq('sp-down') {
-  margin-block-start: rm(31);
+  margin-block-start: rm(20);
 }
 }
 
@@ -160,6 +154,14 @@ transition: opacity 0.3s ease;
     display: block;
     
   }
+  @include mq('sp-down') {
+    inline-size: rm(20);
+    block-size: rm(20);
+    right: rm(10);
+    svg {
+      inline-size: rm(10);
+    }
+  }
 }
 
 
@@ -168,10 +170,11 @@ transition: opacity 0.3s ease;
 }
 
 .p-faq__answer-text {
-    
+  margin-block-start: rm(10);
+    background-color: #FFF;
     display: inline-block;
     font-size: rm(20);
-    font-weight: 900;
+    font-weight: 700;
     line-height: 166.667%; /* 166.667% */
     padding: rm(30) rm(80) rm(30) rm(156);
     @include mq('sp-down') {

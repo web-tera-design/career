@@ -9,6 +9,13 @@
 background-color: $color-bk;
 display: flex;
 justify-content: space-between;
+@include mq('sp-down') {
+  padding-inline: rm(20);
+  padding-block: rm(10);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 }
 
 .l-footer__logo {
@@ -28,6 +35,11 @@ flex-direction: column;
 .l-footer__list {
 display: flex;
 gap: rm(25);
+@include mq('sp-down') {
+  flex-direction: column;
+  gap: rm(10);
+  text-align: center;
+}
 }
 
 .l-footer__item {
@@ -43,6 +55,8 @@ transition: color 0.3s ease;
   &:hover {
     color: $color-gley;
   }
+}
+@include mq('sp-down') {
 }
 }
 

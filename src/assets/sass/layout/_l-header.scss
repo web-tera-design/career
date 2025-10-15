@@ -12,7 +12,10 @@
     translate: -50%;
     z-index: -1;
     background: url(../img/mv-top.webp) no-repeat center center / cover;
-    
+    @include mq('sp-down') {
+      background: url(../img/mv-bg-sp2.webp) no-repeat center center / cover;
+      block-size: rm(500);
+    }
 }
 
 .l-header {
@@ -48,7 +51,9 @@ inline-size: rm(70);
 }
 
 .l-header__nav {
-
+@include mq('tab-down') {
+  display: none;
+}
 }
 
 .l-header__list {

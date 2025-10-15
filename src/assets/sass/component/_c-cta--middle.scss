@@ -1,6 +1,5 @@
 @use "../global" as *;
 .c-cta__link--middle {
-
 }
 
 .c-cta__link-title--middle {
@@ -18,4 +17,10 @@
     inline-size: rm(86.53);
 left: rm(-50);
 top: rm(-40);
+
+@include mq('sp-down') {
+  inline-size: rm(60);
+  left: rm(-30);
+  top: rm(-30);
+}
 }

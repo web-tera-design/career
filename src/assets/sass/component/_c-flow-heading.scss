@@ -13,14 +13,46 @@
 .c-flow-heading__title-subtext {
 font-size: rm(15);
 font-weight: 700;
+@include mq('sp-down') {
+  font-size: rm(10.5);
+}
 }
 
-.c-flow__title-subtext--strong {
+.c-flow-heading__title-subtext--strong span{
+  position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: #dc5a28;
+      border-radius: 100vmax;
+      content: "";
+      width: rm(4);
+      height: rm(4);
+      top: -10px;
+      left: 2px;
+    } 
+}
 
+.c-flow__title-subtext--strong span{
+  position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: #dc5a28;
+      border-radius: 100vmax;
+      content: "";
+      width: rm(4);
+      height: rm(4);
+      top: -10px;
+      left: 2px;
+    } 
 }
 
 .c-flow-heading__title-text {
 font-size: rm(30);
 font-weight: 700;
 letter-spacing: -1.5px;
+@include mq('sp-down') {
+  font-size: rm(21);
+}
 }
