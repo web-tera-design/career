@@ -14,9 +14,9 @@
 
 }
 .c-cta__label--middle {
-    inline-size: rm(86.53);
+    inline-size: rm(100);
 left: rm(-50);
-top: rm(-40);
+top: rm(-50);
 
 @include mq('sp-down') {
   inline-size: rm(60);

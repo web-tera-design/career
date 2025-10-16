@@ -17,11 +17,14 @@ padding-block-end: rm(110);
 }
 
 .p-voice__heading {
-
+padding-block-start: rm(40);
+@include mq('sp-down') {
+  padding-block-start: revert;
+}
 }
 
 .p-voice__content-wrapper {
-padding-block-start: rm(85);
+padding-block-start: rm(35);
 display: flex;
 @include mq('sp-down') {
   padding-block-start: rm(30);
@@ -41,7 +44,7 @@ display: flex;
 .p-voice__lower-content-wrapper {
 display: flex;
 padding-inline: rm(165);
-padding-block-start: rm(58);
+padding-block-start: rm(50);
 gap: rm(20);
 @include mq('sp-down') {
   padding-inline: rm(0);

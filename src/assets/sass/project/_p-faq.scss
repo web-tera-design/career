@@ -31,7 +31,10 @@ padding-block-end: rm(40);
 }
 
 .p-faq__heading {
-
+padding-block-start: rm(30);
+@include mq('sp-down') {
+  padding-block-start: revert;
+}
 }
 
 .p-faq__heading-title {
@@ -84,7 +87,7 @@ position: relative;
 display: block;
 background-color: #fff;
 inline-size: 100%;
-padding: rm(35) rm(197) rm(34) rm(198);
+padding: rm(30) rm(197) rm(30) rm(198);
 border-radius: rm(3);
 
 

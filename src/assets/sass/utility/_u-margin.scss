@@ -11,3 +11,10 @@
 .u-mis3 {
     margin-inline-start: -0.6em;
 }
+
+.u-mbs1 {
+    @include mq('sp-down') {
+        display: inline-block;
+      margin-block-start: rm(12);
+    }
+}

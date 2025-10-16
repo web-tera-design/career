@@ -1,8 +1,10 @@
 @use "../global" as *;
 .p-cta__link {
 inline-size: rm(551);
+block-size: rm(165);
 @include mq('sp-down') {
   inline-size: 95%;
+  block-size: revert;
 }
 }
 
@@ -46,7 +48,7 @@ font-weight: 700;
 }
 
 .p-cta-button-link-arrow {
-    right: rm(-40);
+    right: rm(-30);
 inline-size: rm(76.21);
 block-size: rm(76.21);
 @include mq('sp-down') {

@@ -37,7 +37,7 @@ img {
 }
 
 .p-mv-cta__button {
-    padding-block-start: rm(35);
+    padding-block-start: rm(30);
     padding-inline-start: rm(103);
     @include mq('sp-down') {
       padding-inline-start: revert;
@@ -49,7 +49,7 @@ img {
 
 .p-mv__title-wrapper {
 padding-block-start: rm(50);
-padding-inline-start: rm(12);
+padding-inline-start: rm(20);
 display: flex;
 flex-direction: column;
 @include mq('sp-down') {

@@ -20,7 +20,11 @@ margin-block-start: rm(-5);
 }
 
 .p-feature__bg-image {
-  block-size: rm(526);
+  
+  @include mq('sp-down') {
+    
+    block-size: rm(526);
+  }
 img {
     inline-size: 100%;
     block-size: 100%;
@@ -55,7 +59,10 @@ backdrop-filter: blur(15px);
 }
 
 .p-feature__heading {
-
+padding-block-start: rm(20);
+@include mq('sp-down') {
+  padding-block-start: revert;
+}
 }
 
 .p-feature__content-wrapper {

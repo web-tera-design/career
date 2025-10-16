@@ -23,6 +23,15 @@ top:rm(-50);
 }
 }
 
+.l-section__z-index {
+      position: relative;
+  z-index: 1;
+  transform:translateY(rm(-80));
+@include mq('sp-down') {
+  transform:translateY(rm(-150));
+}
+}
+
 .l-main {
 
 }

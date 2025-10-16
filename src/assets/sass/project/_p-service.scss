@@ -16,7 +16,7 @@
 .p-service__top-bg {
 position: absolute;
 inline-size: 100%;
-top: rm(-74);
+top: rm(-70);
 left: 0;
 z-index: 2;
 img {
@@ -41,12 +41,11 @@ img {
     object-fit: cover;
 }
 @include mq('sp-down') {
-  bottom:rm(-30);
+  bottom:rm(-29);
 }
 }
 
 .p-service__heading {
-padding-block-start: rm(50);
 @include mq('sp-down') {
   padding-block-start: rm(10);
 }

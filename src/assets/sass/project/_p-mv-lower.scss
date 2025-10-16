@@ -6,7 +6,7 @@ background: url(../img/mv-lower-bg.webp) no-repeat center center / cover;
   -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 13%);
   mask-image: linear-gradient(to bottom, transparent 0%, black 13%);
   inline-size: min(1366px, 100%);
-  block-size: rm(680);
+  block-size: rm(840);
   left: 50%;
   translate: -50%;
   @include mq('sp-down') {
@@ -17,17 +17,23 @@ background: url(../img/mv-lower-bg.webp) no-repeat center center / cover;
 }
 
 .p-mv-lower__inner {
+  @include mq('sp-down') {
+    block-size: 100%;
+  }
 }
 
 .p-mv-lower__content-wrapper {
     position: absolute;
     z-index: 2;
-    padding-block-start: rm(224);
+    padding-inline-start: rm(72);
+    padding-block-start: rm(270);
     display: flex;
+    gap: rm(20);
     @include mq('sp-down') {
-
+      gap: revert;
       flex-direction: column;
       padding-block-start: rm(160);
+      padding-inline-start: revert;
     }
 }
 
@@ -35,10 +41,18 @@ background: url(../img/mv-lower-bg.webp) no-repeat center center / cover;
 }
 
 .p-mv-lower__title {
-
+  @include mq('sp-down') {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
 }
 
 .p-mv-lower__title-text {
+  display: inline-block;
+  transform:skew(-5deg);
 color: #FFF;
 font-family: $font-cta;
 font-size: rm(50);
@@ -46,20 +60,20 @@ font-weight: 900;
 line-height: 130%; /* 130% */
 letter-spacing: rm(-2.5);
 @include mq('sp-down') {
-  font-size: rm(35);
+  font-size: rm(28);
 }
 }
 
 .p-mv-lower__title-char {
   display: inline-block;
   &:nth-of-type(1)  { letter-spacing: -0.25em; }
-  &:nth-of-type(2)  { letter-spacing: -0.6em; }
+  &:nth-of-type(2)  { letter-spacing: -0.4em; }
   &:nth-of-type(3)  { letter-spacing: -0.25em; }
   &:nth-of-type(4)  { letter-spacing: -0.25em; }
   &:nth-of-type(5)  { letter-spacing: -0.25em; }
   &:nth-of-type(6)  { letter-spacing: -0.3em; }
-  &:nth-of-type(7)  { letter-spacing: -0.4em; }
-  &:nth-of-type(8)  { letter-spacing: -0.4em; }
+  &:nth-of-type(7)  { letter-spacing: -0.3em; }
+  &:nth-of-type(8)  { letter-spacing: -0.2em; }
   &:nth-of-type(9)  { letter-spacing: -0.6em; }
   &:nth-of-type(10) { letter-spacing: -0.1em; }
   &:nth-of-type(11) { letter-spacing: -0.25em; }
@@ -67,32 +81,47 @@ letter-spacing: rm(-2.5);
   &:nth-of-type(13) { letter-spacing: -0.25em; }
   &:nth-of-type(14) { letter-spacing: -0.25em; }
   &:nth-of-type(15) { letter-spacing: -0.25em; }
-  &:nth-of-type(16) { letter-spacing: -0.2em; }
-  &:nth-of-type(17) { letter-spacing: -0.2em; }
+  &:nth-of-type(16) { letter-spacing: -0.3em; }
+  &:nth-of-type(17) { letter-spacing: -0.3em; }
+  &:nth-of-type(18) { letter-spacing: -0.3em; }
+  &:nth-of-type(19) { letter-spacing: -0.3em; }
+  &:nth-of-type(20) { letter-spacing: -0.3em; }
+  &:nth-of-type(21) { letter-spacing: -0.35em; }
 }
 
 .p-mv-lower__title-char--point {
   position: relative;
+  font-size: rm(60);
     &::before {
       content: '';
       position: absolute;
-      background-color: #dc5a28;
+      background-color: $color-gley;
       border-radius: 100vmax;
       content: "";
       width: rm(5);
       height: rm(5);
-      top: 0;
+      top: rm(-5);
       left: 0;
     } 
-      &:nth-of-type(5)::before { }   // 「5」
-  &:nth-of-type(6)::before {  }   // 「歳」
-  &:nth-of-type(7)::before { }   // 「ま」
-  &:nth-of-type(8)::before { }   // 「で」
+      &:nth-of-type(4)::before { left: rm(10);}   // 「5」
+  &:nth-of-type(5)::before { left: rm(10); }   // 「歳」
+  &:nth-of-type(6)::before { left: rm(30);}   // 「ま」
+  &:nth-of-type(7)::before { left: rm(25);}   // 「で」
+  &:nth-of-type(8)::before { left: rm(30);}   // 「で」
+
+  @include mq('sp-down') {
+    font-size: rm(35);
+          &:nth-of-type(4)::before { left: rm(6);}   // 「5」
+  &:nth-of-type(5)::before { left: rm(6); }   // 「歳」
+  &:nth-of-type(6)::before { left: rm(15);}   // 「ま」
+  &:nth-of-type(7)::before { left: rm(15);}   // 「で」
+  &:nth-of-type(8)::before { left: rm(15);}   // 「で」
+  }
 }
 
 
 .p-mv-lower__lead {
-padding-block-start: rm(50);
+padding-block-start: rm(30);
 @include mq('sp-down') {
   padding-block-start: rm(35);
   text-align: center;

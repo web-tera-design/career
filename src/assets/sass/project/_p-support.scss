@@ -22,7 +22,10 @@
 }
 
 .p-support__top-heading {
-
+padding-block-start: rm(10);
+@include mq('sp-down') {
+  padding-block-start: revert;
+}
 }
 
 .p-support-heading__lead {
@@ -45,9 +48,8 @@
 }
 
 .p-support__lower-wrapper {
-padding-block-start: rm(75);
+padding-block-start: rm(50);
 @include mq('sp-down') {
-  padding-block-start: rm(50);
 }
 }
 
